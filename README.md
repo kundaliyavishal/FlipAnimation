@@ -1,3 +1,3 @@
 # FlipAnimation
 
-A description of this package.
+Add flip animation in SwiftUI.

@@ -7,12 +7,10 @@ public struct FlipAnimationView<Front:View,Rear:View>: View {
     var rear: () -> Rear
     let completion: () -> Void
    public init(
-               isImageFlipped: Bool = false,
                numberOFSpin: Int,
                @ViewBuilder front: @escaping () -> Front,
                @ViewBuilder rear: @escaping () -> Rear,
                completion: @escaping () -> Void) {
-        self.isImageFlipped = isImageFlipped
         self.numberOFSpin = numberOFSpin
         self.front = front
         self.rear = rear

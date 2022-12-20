@@ -7,7 +7,7 @@ public struct FlipAnimationView<Front:View,Rear:View>: View {
     var rear: () -> Rear
     let completion: () -> Void
    public init(
-               numberOFSpin: Int,
+               numberOFSpin: Int = 8,
                @ViewBuilder front: @escaping () -> Front,
                @ViewBuilder rear: @escaping () -> Rear,
                completion: @escaping () -> Void) {
